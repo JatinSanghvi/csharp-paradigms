@@ -6,4 +6,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="**\*.xml" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 </Project>

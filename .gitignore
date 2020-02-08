@@ -5,6 +5,9 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# Build results.
+# Visual Studio.
+.vs/
+
+# Build Results.
 bin/
 obj/
