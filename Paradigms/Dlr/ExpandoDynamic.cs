@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Xml.Linq;
-
-namespace Paradigms.Dlr
+﻿namespace Paradigms.Dlr
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Xml.Linq;
+
     internal static class ExpandoDynamic
     {
         public static void Main(string[] args)

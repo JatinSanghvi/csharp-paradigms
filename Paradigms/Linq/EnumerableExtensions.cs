@@ -1,23 +1,20 @@
-using System;
-using System.Collections.Generic;
-
 namespace Paradigms.Linq
 {
+    using System;
+    using System.Collections.Generic;
+
     internal static class EnumerableExtensions
     {
         public static void Main(string[] args)
         {
-            var cities = new string[] { "Ghent", "London", "Las Vegas", "Hyderabad" };
+            string[] cities = new string[] { "Ghent", "London", "Las Vegas", "Hyderabad" };
 
             foreach (string city in cities.Filter(c => c.StartsWith('L')).ReverseSort(c => c.Length))
             {
                 Console.WriteLine(city);
             }
         }
-    }
 
-    internal static class Extensions
-    {
         public static IEnumerable<T> Filter<T>(this IEnumerable<T> source, Predicate<T> predicate)
         {
             foreach (T item in source)
@@ -41,7 +38,7 @@ namespace Paradigms.Linq
             list.Sort();
             list.Reverse();
 
-            foreach (var element in list)
+            foreach ((TKey, TSource) element in list)
             {
                 yield return element.Item2;
             }

@@ -1,10 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Xml.Linq;
-
-namespace Paradigms.Dlr
+﻿namespace Paradigms.Dlr
 {
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Dynamic;
+    using System.Xml.Linq;
+
     internal class DynamicXml : DynamicObject, IEnumerable<DynamicXml>
     {
         private readonly XContainer container;
@@ -17,6 +17,11 @@ namespace Paradigms.Dlr
         public DynamicXml(XElement element)
         {
             this.container = element;
+        }
+
+        public static implicit operator string(DynamicXml dynamicXml)
+        {
+            return ((XElement)dynamicXml.container).Value;
         }
 
         public override bool TryGetMember(GetMemberBinder binder, out object result)
@@ -46,11 +51,6 @@ namespace Paradigms.Dlr
         IEnumerator IEnumerable.GetEnumerator()
         {
             throw new System.NotImplementedException();
-        }
-
-        public static implicit operator string(DynamicXml dynamicXml)
-        {
-            return ((XElement)dynamicXml.container).Value;
         }
     }
 }

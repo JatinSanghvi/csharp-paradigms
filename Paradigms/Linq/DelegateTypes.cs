@@ -1,8 +1,10 @@
-using System;
-using System.Linq.Expressions;
+#pragma warning disable IDE0039 // Use local function
 
 namespace Paradigms.Linq
 {
+    using System;
+    using System.Linq.Expressions;
+
     internal static class DelegateTypes
     {
         public static void Main(string[] args)

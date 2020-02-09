@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Xml.Linq;
-
-namespace Paradigms.Dlr
+﻿namespace Paradigms.Dlr
 {
+    using System.Collections.Generic;
+    using System.Dynamic;
+    using System.Linq;
+    using System.Xml.Linq;
+
     internal static class ExpandoXml
     {
         public static ExpandoObject ToExpando(this XDocument document)

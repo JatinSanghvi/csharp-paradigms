@@ -4,9 +4,19 @@
     <OutputType>Exe</OutputType>
     <StartupObject>Paradigms.Program</StartupObject>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <CodeAnalysisRuleSet>StyleCop.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="**\*.csv" CopyToOutputDirectory="PreserveNewest" />
     <None Update="**\*.xml" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
+
 </Project>
