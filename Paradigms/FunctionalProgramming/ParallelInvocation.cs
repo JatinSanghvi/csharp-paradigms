@@ -6,7 +6,7 @@
     using System.Linq;
     using System.Threading.Tasks;
 
-    internal static class ParallelExecution
+    internal static class ParallelInvocation
     {
         public static void Main()
         {
