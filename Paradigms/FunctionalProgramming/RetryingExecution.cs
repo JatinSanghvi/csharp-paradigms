@@ -7,9 +7,11 @@
     {
         public static void Main(string[] args)
         {
-            var client = new WebClient();
-            Download(client, "https://jsonplaceholder.typicode.com/users");
-            Download(client, "https://api.github.com");
+            using (var client = new WebClient())
+            {
+                Download(client, "https://jsonplaceholder.typicode.com/users");
+                Download(client, "https://api.github.com");
+            }
         }
 
         private static void Download(WebClient client, string address)
