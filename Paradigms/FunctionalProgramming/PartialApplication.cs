@@ -5,7 +5,7 @@
 
     internal static class PartialApplication
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             /*
              * Partial application allows an action or function with input arguments to be passed as argument to higher-

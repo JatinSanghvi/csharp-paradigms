@@ -6,7 +6,7 @@
 
     internal static class LazyEvaluation
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             // Nothing would get executed and the control would exit the 'Main' method if 'String.Join()' is not called.
             string firstTenPrimes = string.Join(' ', GetOddNumbers().Where(IsPrime).Take(10));

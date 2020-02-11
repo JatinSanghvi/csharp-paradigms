@@ -5,7 +5,7 @@ namespace Paradigms.Linq
 
     internal static class EnumerableExtensions
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             string[] cities = new string[] { "Ghent", "London", "Las Vegas", "Hyderabad" };
 

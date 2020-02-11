@@ -5,7 +5,7 @@
 
     internal static class RetryingExecution
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             using (var client = new WebClient())
             {

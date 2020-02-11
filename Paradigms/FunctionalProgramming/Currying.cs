@@ -6,7 +6,7 @@
 
     internal static class Currying
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             /*
              * Currying converts and action or function with input arguments into a higher-order function. This new

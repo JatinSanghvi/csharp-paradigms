@@ -7,7 +7,7 @@ namespace Paradigms.Linq
 
     internal static class DelegateTypes
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             ActionFuncDemo();
             ExpressionDemo();

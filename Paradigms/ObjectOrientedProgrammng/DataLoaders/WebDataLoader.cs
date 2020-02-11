@@ -15,8 +15,10 @@
 
         public string LoadData()
         {
-            var client = new WebClient();
-            return client.DownloadString(this.uri);
+            using (var client = new WebClient())
+            {
+                return client.DownloadString(this.uri);
+            }
         }
     }
 }

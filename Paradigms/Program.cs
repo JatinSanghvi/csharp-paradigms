@@ -7,7 +7,7 @@
 
     public static class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             string sourceNamespace = typeof(Program).Namespace;
 
@@ -26,7 +26,7 @@
                 return;
             }
 
-            Type.GetType($"{selectedNamespace}.{selectedClassName}").GetMethod("Main").Invoke(null, new object[] { new string[0] });
+            Type.GetType($"{selectedNamespace}.{selectedClassName}").GetMethod("Main").Invoke(null, null);
             Console.ReadKey();
         }
 

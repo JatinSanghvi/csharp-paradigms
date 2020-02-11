@@ -5,7 +5,7 @@
 
     internal static class TimingExecution
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             TimeSpan elapsed = GetExecutionTime(() =>
             {
@@ -14,7 +14,7 @@
                 Console.WriteLine($"{number}^{exponent} = {SlowExponent(number, exponent)}");
             });
 
-            Console.WriteLine($"Execution Time: {elapsed.Milliseconds} mSec.");
+            Console.WriteLine($"Execution Time: {elapsed}.");
         }
 
         private static int SlowExponent(int number, int exponent)

@@ -4,7 +4,7 @@
 
     internal static class StockReversals
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var loader = GetLoader("Oop\\Msft.csv");
             var parser = new CsvStockQuoteParser(loader);
