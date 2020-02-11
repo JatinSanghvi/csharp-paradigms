@@ -1,4 +1,4 @@
-﻿namespace Paradigms.Oop
+﻿namespace Paradigms.ObjectOrientedProgramming
 {
     using System.IO;
 

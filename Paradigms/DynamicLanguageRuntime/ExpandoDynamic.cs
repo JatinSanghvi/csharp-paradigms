@@ -1,4 +1,4 @@
-﻿namespace Paradigms.Dlr
+﻿namespace Paradigms.DynamicLanguageRuntime
 {
     using System;
     using System.Collections.Generic;
